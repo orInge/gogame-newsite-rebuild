@@ -1,2 +1,0 @@
-mezzanine
-django-assets
