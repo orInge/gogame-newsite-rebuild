@@ -9,4 +9,8 @@ A simplified rebuild of the gogame-newsite
     cd site
     virtualenv --distribute --no-site-packages env
     source env/bin/activate
-    pip install mezzanine
+    pip install -U -r requirements.txt
+
+    cd main
+    python manage.py runserver
+    visit http://127.0.0.1:8000
