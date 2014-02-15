@@ -1,5 +1,4 @@
 *.pyc
 *.pyo
 .DS_Store
-/static
-/env
+static/.webassets-cache/*
