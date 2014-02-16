@@ -14,3 +14,8 @@ A simplified rebuild of the gogame-newsite
     cd main
     python manage.py runserver
     visit http://127.0.0.1:8000
+
+
+### bpython (optional)
+    pip install bpython
+    bpython manage.py shell
