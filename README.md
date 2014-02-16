@@ -3,7 +3,7 @@ gogame-newsite-rebuild
 
 A simplified rebuild of the gogame-newsite
 
-### Setup
+#### Setup
 
     mkdir site
     cd site
@@ -16,6 +16,10 @@ A simplified rebuild of the gogame-newsite
     visit http://127.0.0.1:8000
 
 
-### bpython (optional)
+#### collect static assets & templates
+    python manage.py collectstatic
+
+
+#### bpython (optional)
     pip install bpython
     bpython manage.py shell

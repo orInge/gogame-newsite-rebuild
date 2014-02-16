@@ -1,12 +1,13 @@
 
-import os
+from os import path
 from settings import *
 
+STATIC_ROOT = path.join(path.dirname(PROJECT_ROOT), 'static') 
 
 # django_assets 
-ASSETS_ROOT = os.path.join(PROJECT_ROOT, 'static')
+ASSETS_ROOT = path.join(PROJECT_ROOT, 'static')
 ASSETS_URL = ASSETS_ROOT
-SASS_LOAD_PATHS = [ASSETS_ROOT + '/sass']
+SASS_LOAD_PATHS = [path.join(ASSETS_ROOT, 'sass')]
 
 
 
