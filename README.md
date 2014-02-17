@@ -18,12 +18,19 @@ A simplified rebuild of the gogame-newsite
     # specify 'rebuild:8000' for domain:port
     # opt to install demo pages (yes)
 
+#### collecttemplates
+    python manage.py collecttemplates
+    # copies all mezzanine default templates into project dir
+    mv templates ../templates
+    # move out of project dir so as to not override app/templates
+    # copy individually to app/templates and modify as needed
+
 #### run dev server
     python manage.py runserver
     visit http://127.0.0.1:8000
 
 
-#### collect static assets & templates
+#### collectstatic (for deploy)
     python manage.py collectstatic
 
 
