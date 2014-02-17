@@ -7,12 +7,12 @@ A simplified rebuild of the gogame-newsite
 
     mkdir site
     cd site
-    git clone git@github.com:orInge/gogame-newsite-rebuild.git rebuild-project
     virtualenv --distribute --no-site-packages env
     source env/bin/activate
+    git clone git@github.com:orInge/gogame-newsite-rebuild.git project
     pip install -U -r main/requirements.txt
-    cd rebuild-project
-    
+    cd project
+
     # temporary example db
     python manage.py createdb
     # follow instructions to create a superuser

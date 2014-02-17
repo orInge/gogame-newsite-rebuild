@@ -232,7 +232,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
-    # "rebuild-app",
+    "app",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -253,7 +253,6 @@ INSTALLED_APPS = (
     #"mezzanine.accounts",
     #"mezzanine.mobile",
     "django_assets",
-    "app",
 )
 
 # List of processors used by RequestContext to populate the context.

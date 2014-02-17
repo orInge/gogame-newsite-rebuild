@@ -1,0 +1,4 @@
+/* line 1 */
+.navbar.navbar-default {
+  background: white;
+}
