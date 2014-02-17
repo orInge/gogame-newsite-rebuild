@@ -1,7 +1,7 @@
 gogame-newsite-rebuild
 ======================
 
-A simplified rebuild of the gogame-newsite
+A stripped down mezzanine project for development and experimenting
 
 #### Setup
     mkdir site

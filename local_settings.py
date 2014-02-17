@@ -34,3 +34,5 @@ DATABASES = {
         "PORT": "",
     }
 }
+
+ALLOWED_HOSTS = ['rebuild:8000']

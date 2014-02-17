@@ -1,7 +1,7 @@
-from __future__ import unicode_literals
+# from __future__ import unicode_literals
 
-SECRET_KEY = "%(secret_key)s"
-NEVERCACHE_KEY = "%(nevercache_key)s"
+# SECRET_KEY = "%(secret_key)s"
+# NEVERCACHE_KEY = "%(nevercache_key)s"
 
 DATABASES = {
     "default": {

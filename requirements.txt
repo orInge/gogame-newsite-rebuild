@@ -1,3 +1,5 @@
 mezzanine
 django-assets
 mysql-python
+gunicorn
+gevent
