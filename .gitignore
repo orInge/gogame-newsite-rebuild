@@ -5,4 +5,4 @@
 .coverage
 local_settings.py
 /static
-app/static/.webassets-cache/*
+app/static/.webassets-cache
