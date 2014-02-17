@@ -1,5 +1,6 @@
 from django_assets import Bundle, register
 
+# sample
 # js = Bundle('common/jquery.js', 'site/base.js', 'site/widgets.js',
 #             filters='jsmin', output='gen/packed.js')
 # register('js_all', js)
@@ -10,6 +11,7 @@ app_sass = Bundle(
     output='gen/style.css')
 register('app_sass', app_sass)
 
+# sample
 # bootstrap_sass = Bundle(
 #     'sass/bootstrap.scss',
 #     filters='scss',

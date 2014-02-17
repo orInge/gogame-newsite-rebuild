@@ -2,6 +2,8 @@
 from os import path
 from settings import *
 
+
+# parent dir of project (site)
 STATIC_ROOT = path.join(path.dirname(PROJECT_ROOT), 'static')
 
 # django_assets 

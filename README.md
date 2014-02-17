@@ -31,6 +31,7 @@ A simplified rebuild of the gogame-newsite
 
 
 #### collectstatic (for deploy)
+    # collects to STATIC_ROOT as defined in local_settings.py or settings.py
     python manage.py collectstatic
 
 
