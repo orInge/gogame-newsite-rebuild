@@ -2,6 +2,10 @@
 from os import path
 from settings import *
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+}
 
 # parent dir of project (site)
 STATIC_ROOT = path.join(path.dirname(PROJECT_ROOT), 'static')

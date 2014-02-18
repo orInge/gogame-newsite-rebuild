@@ -3,3 +3,4 @@ django-assets
 mysql-python
 gunicorn
 gevent
+dj_database_url
