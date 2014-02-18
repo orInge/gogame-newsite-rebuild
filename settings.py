@@ -253,6 +253,7 @@ INSTALLED_APPS = (
     #"mezzanine.accounts",
     #"mezzanine.mobile",
     "django_assets",
+    # "storages",
     "gunicorn",
 )
 
