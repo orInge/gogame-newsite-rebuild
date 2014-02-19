@@ -55,8 +55,8 @@ v0.3
     # move out of project dir so as to not override app/templates
     # copy individually to app/templates and modify as needed
 
-#### collectstatic (for deploy)
-    # collects to STATIC_ROOT as defined in local_settings.py or settings.py
+#### collectstatic 
+    # collects to STATIC_ROOT 
     python manage.py collectstatic
 
 
