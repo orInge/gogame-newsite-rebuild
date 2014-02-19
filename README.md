@@ -1,7 +1,8 @@
 gogame-newsite-rebuild
 ======================
 
-A stripped down mezzanine project for development and experimenting
+From the ground up
+v0.3
 
 #### Setup
     mkdir site
