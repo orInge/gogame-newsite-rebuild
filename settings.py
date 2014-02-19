@@ -148,9 +148,9 @@ AUTHENTICATION_BACKENDS = ("mezzanine.core.auth_backends.MezzanineBackend",)
 # List of finder classes that know how to find static files in
 # various locations.
 STATICFILES_FINDERS = (
-    "django_assets.finders.AssetsFinder",  # django_assets
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "django_assets.finders.AssetsFinder",  # django_assets
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
@@ -253,7 +253,7 @@ INSTALLED_APPS = (
     #"mezzanine.accounts",
     #"mezzanine.mobile",
     "django_assets",
-    # "storages",
+    "storages",
     "gunicorn",
 )
 

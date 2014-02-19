@@ -1,20 +1,48 @@
 
 from os import path
+from os import environ
 from settings import *
 
+
+##################
+# AWS S3 STORAGE #
+##################
+
+# django_storages (boto)
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+# enable collectstatic to automatically upload static assets to AWS bucket
+STATICFILES_STORAGE = 's3static.S3Static'
+
+AWS_ACCESS_KEY_ID = environ['AWS_ACCESS_KEY']
+AWS_SECRET_ACCESS_KEY = environ['AWS_SECRET_KEY']
+AWS_STORAGE_BUCKET_NAME = 'gogame-newsite-rebuild'
+
+STATIC_ROOT = 'http://%s.s3.amazonaws.com/static', AWS_STORAGE_BUCKET_NAME
+
+
+# bugfix for gunicorn workers
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
 }
 
+
+############# 
+# LOCAL DEV #
+#############
+
 # parent dir of project (site)
-STATIC_ROOT = path.join(path.dirname(PROJECT_ROOT), 'static')
+# STATIC_ROOT = path.join(path.dirname(PROJECT_ROOT), 'static')
 
 # django_assets 
 ASSETS_ROOT = path.join(PROJECT_ROOT, 'app/static')
 ASSETS_URL = ASSETS_ROOT
 SASS_LOAD_PATHS = [path.join(ASSETS_ROOT, 'sass')]
 
+
+############
+# DEFAULTS #
+############
 
 DEBUG = True
 

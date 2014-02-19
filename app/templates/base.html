@@ -35,7 +35,7 @@
 <!-- django_assets -->
 {% load assets %}
 {% assets "app_sass" %}
-    <link rel="stylesheet" href="{{ STATIC_URL }}gen/style.css">
+    <link rel="stylesheet" href="{% static "gen/style.css" %}">
 {% endassets %}
 
 {% compress js %}

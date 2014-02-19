@@ -4,3 +4,5 @@ mysql-python
 gunicorn
 gevent
 dj_database_url
+django_storages
+boto
