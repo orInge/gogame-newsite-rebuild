@@ -26,12 +26,12 @@ AWS_SECRET_ACCESS_KEY = environ['AWS_SECRET_KEY']
 AWS_STORAGE_BUCKET_NAME = 'gogame-newsite-rebuild'
 
 # django_storages (boto)
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 # DEFAULT_FILE_STORAGE = 's3static.S3Static'
 # enable collectstatic to automatically upload static assets to AWS bucket
-STATICFILES_STORAGE = 's3static.S3Static'
+# STATICFILES_STORAGE = 's3static.S3Static'
 
-STATIC_ROOT = 'https://%s.s3.amazonaws.com/static' % AWS_STORAGE_BUCKET_NAME
+# STATIC_ROOT = 'https://%s.s3.amazonaws.com/static' % AWS_STORAGE_BUCKET_NAME
 # STATIC_URL = 'https://%s.s3.amazonaws.com/static/' % AWS_STORAGE_BUCKET_NAME
 
 # MEDIA_URL = STATIC_URL
@@ -43,7 +43,7 @@ STATIC_ROOT = 'https://%s.s3.amazonaws.com/static' % AWS_STORAGE_BUCKET_NAME
 #############
 
 # parent dir of project (site)
-# STATIC_ROOT = path.join(path.dirname(PROJECT_ROOT), 'static')
+STATIC_ROOT = path.join(path.dirname(PROJECT_ROOT), 'static')
 
 
 ############
