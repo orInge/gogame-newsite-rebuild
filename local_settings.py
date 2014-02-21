@@ -43,7 +43,7 @@ AWS_STORAGE_BUCKET_NAME = 'gogame-newsite-rebuild'
 #############
 
 # parent dir of project (site)
-STATIC_ROOT = path.join(path.dirname(PROJECT_ROOT), 'static')
+# STATIC_ROOT = path.join(path.dirname(PROJECT_ROOT), 'static')
 
 
 ############
